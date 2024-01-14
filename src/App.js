@@ -21,7 +21,7 @@ function App() {
   //with useEffect an async function, its called whenever there is a change in the state of either the application or the dependencies([])
   //Its executed after the application is rendered
   useEffect(() => {
-    setItems(JSON.parse(localStorage.getItem("listItems")));
+    setItems(JSON.parse(localStorage.getItem("listItems"))||[]);
   }, []);
 
   //methods
